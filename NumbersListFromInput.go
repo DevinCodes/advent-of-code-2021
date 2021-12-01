@@ -15,7 +15,7 @@ func NumbersListFromInput() []int {
 	defer file.Close()
 
 	scanner := bufio.NewScanner(file)
-	values := make([]int, 0)
+	var values []int
 	for scanner.Scan() {
 		num, err := strconv.Atoi(scanner.Text())
 		if err != nil {

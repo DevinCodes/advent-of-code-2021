@@ -7,12 +7,12 @@ import (
 
 func main() {
 	numbers := advent_of_code.NumbersListFromInput()
-	sums := make([]int, 0)
+	var sums []int
 	var currSum int
 	maxIndex := len(numbers) - 1
 
 	for i, number := range numbers {
-		if i > maxIndex - 2 {
+		if i > maxIndex-2 {
 			break
 		}
 

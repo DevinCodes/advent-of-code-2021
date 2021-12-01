@@ -11,4 +11,3 @@ func main() {
 
 	fmt.Printf("Number of increases: %d\n", increases)
 }
-
