@@ -1,12 +1,12 @@
 package main
 
 import (
-	advent_of_code "advent-of-code"
+	day_1 "day-1"
 	"fmt"
 )
 
 func main() {
-	numbers := advent_of_code.NumbersListFromInput()
+	numbers := day_1.NumbersListFromInput()
 	var sums []int
 	var currSum int
 	maxIndex := len(numbers) - 1
@@ -24,7 +24,7 @@ func main() {
 		currSum = 0
 	}
 
-	increases := advent_of_code.NumberOfIncreases(sums)
+	increases := day_1.NumberOfIncreases(sums)
 	fmt.Printf("Number of increases: %d\n", increases)
 
 }

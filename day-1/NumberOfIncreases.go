@@ -1,4 +1,4 @@
-package advent_of_code
+package day_1
 
 func NumberOfIncreases(set []int) int {
 	count := 0

@@ -1,4 +1,4 @@
-package advent_of_code
+package day_1
 
 import (
 	"bufio"
@@ -8,7 +8,7 @@ import (
 )
 
 func NumbersListFromInput() []int {
-	file, err := os.Open("../input.txt")
+	file, err := os.Open("./input.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
