@@ -78,7 +78,6 @@ func (b *Board) HasBingo() bool {
 	return false
 }
 
-
 func GetBoardsFromInput() []Board {
 	file, err := os.Open("./input.txt")
 	if err != nil {
